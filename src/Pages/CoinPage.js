@@ -31,7 +31,6 @@ const CoinPage = () => {
 
   const addToWatchlist = async () => {
     const coinRef = doc(db, "watchlist", user.uid);
-    console.log("coinRef", coinRef);
     try {
       await setDoc(
         coinRef,
